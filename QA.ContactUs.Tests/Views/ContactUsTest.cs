@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+/*
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+*/
 
 namespace QA.ContactUs.Tests.Views
-{
+{/*
     [TestFixture]
     public class ContactUsTest
     {
@@ -29,5 +31,5 @@ namespace QA.ContactUs.Tests.Views
         [Test]
         public void Page()
         {  }
-    }
+    }*/
 }
