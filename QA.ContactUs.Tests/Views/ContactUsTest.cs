@@ -17,7 +17,6 @@ namespace QA.ContactUs.Tests.Views
         [SetUp]
         public void init()
         {
-            
             driver.Url = "http://www.demoqa.com";
         }
 
