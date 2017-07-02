@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using TechTalk.SpecFlow;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -8,12 +9,15 @@ namespace QA.ContactUs.Tests.FeatureTest
     [Binding]
     public class ContactUsPageSteps
     {
+        
         private IWebDriver driver = new ChromeDriver();
 
         [Given(@"I am on the QAWorks Site")]
         public void GivenIAmOnTheQAWorksSite()
         {
+            System.Environment.SetEnvironmentVariable("webdriver.chrome.driver", @"chromedriver");
             driver.Url = "http://localhost:13369/";
+            Thread.Sleep(5000);
         }
         
         [Then(@"I should be able to contact QAWorks with the following information")]

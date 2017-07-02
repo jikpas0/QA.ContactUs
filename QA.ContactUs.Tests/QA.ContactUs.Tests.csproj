@@ -108,6 +108,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />
+    <Content Include="driver\chromedriver.exe" />
   </ItemGroup>
   <ItemGroup>
     <None Include="FeatureTest\ContactUsFeature.feature">
