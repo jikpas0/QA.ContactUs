@@ -6,6 +6,7 @@
   Scenario: Valid Submission
     Given I am on the QAWorks Site
     Then I should be able to contact QAWorks with the following information
-      | name    | j.Bloggs                                  |
+      | Key		| Value										|
+	  | name    | j.Bloggs                                  |
       | email   | j.Bloggs@qaworks.com                      |
       | message | please contact me I want to find out more |

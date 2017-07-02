@@ -19,7 +19,7 @@ namespace QA.ContactUs.Tests.FeatureTest
         {
             System.Environment.SetEnvironmentVariable("webdriver.chrome.driver", @"../driver/chromedriver");
             driver.Url = "http://localhost:13369/";
-            Thread.Sleep(5000);
+            Thread.Sleep(1000);
         }
         
         [Then(@"I should be able to contact QAWorks with the following information")]
