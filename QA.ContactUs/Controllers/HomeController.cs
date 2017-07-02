@@ -13,7 +13,7 @@ namespace QA.ContactUs.Controllers
         {
             //redirect page to another view or display message sent 
             ViewBag.MessageSent = "";
-            if (contact != null)
+            if (contact.Name != null)
             {
                 ViewBag.MessageSent = "Message has been sent";
             }

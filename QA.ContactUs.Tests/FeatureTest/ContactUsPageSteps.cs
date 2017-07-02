@@ -15,7 +15,7 @@ namespace QA.ContactUs.Tests.FeatureTest
         [Given(@"I am on the QAWorks Site")]
         public void GivenIAmOnTheQAWorksSite()
         {
-            System.Environment.SetEnvironmentVariable("webdriver.chrome.driver", @"chromedriver");
+            System.Environment.SetEnvironmentVariable("webdriver.chrome.driver", @"../driver/chromedriver");
             driver.Url = "http://localhost:13369/";
             Thread.Sleep(5000);
         }
@@ -26,8 +26,8 @@ namespace QA.ContactUs.Tests.FeatureTest
             IWebElement nameElement = driver.FindElement(By.Id("Name"));
             // Action can be performed on Input Button element
             nameElement.SendKeys("Hello World");
-
-            IWebElement submitElement = driver.FindElement(By.Id("Send"));
+            Thread.Sleep(5000);
+            IWebElement submitElement = driver.FindElement(By.Name("Send"));
             // Action can be performed on Input Button element
             submitElement.Submit();
         }
